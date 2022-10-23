@@ -31,7 +31,7 @@ void UeAppTask::onStart()
     // need to add IP and port
     try
     {
-        agfUdpServer = new udp::UdpServerTask(std::string(cons::UeIp), 666666, this);
+        agfUdpServer = new udp::UdpServerTask(std::string(cons::UeIp), 66666, this);
         agfUdpServer->start();
     }
     catch (const LibError &e)
