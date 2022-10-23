@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsctp-cxx.a "CMakeFiles/sctp-cxx.dir/client.cpp.o" "CMakeFiles/sctp-cxx.dir/internal.cpp.o" "CMakeFiles/sctp-cxx.dir/sctp.cpp.o" "CMakeFiles/sctp-cxx.dir/server.cpp.o" "CMakeFiles/sctp-cxx.dir/types.cpp.o"
+/usr/bin/ranlib libsctp-cxx.a

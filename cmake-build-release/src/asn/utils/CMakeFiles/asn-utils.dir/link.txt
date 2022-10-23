@@ -1,0 +1,2 @@
+/usr/bin/ar qc libasn-utils.a "CMakeFiles/asn-utils.dir/ngap.cpp.o" "CMakeFiles/asn-utils.dir/utils.cpp.o"
+/usr/bin/ranlib libasn-utils.a

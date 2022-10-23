@@ -1,0 +1,2 @@
+/usr/bin/ar qc libgtp.a CMakeFiles/gtp.dir/encode.cpp.o CMakeFiles/gtp.dir/ext_header.cpp.o CMakeFiles/gtp.dir/message.cpp.o
+/usr/bin/ranlib libgtp.a

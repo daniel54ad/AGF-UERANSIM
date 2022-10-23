@@ -1,0 +1,2 @@
+/usr/bin/ar qc librlc.a CMakeFiles/rlc.dir/encoder.cpp.o CMakeFiles/rlc.dir/entity_am.cpp.o CMakeFiles/rlc.dir/entity_tm.cpp.o CMakeFiles/rlc.dir/entity_um.cpp.o CMakeFiles/rlc.dir/func.cpp.o CMakeFiles/rlc.dir/rlc.cpp.o CMakeFiles/rlc.dir/test.cpp.o CMakeFiles/rlc.dir/test2.cpp.o CMakeFiles/rlc.dir/utils.cpp.o
+/usr/bin/ranlib librlc.a

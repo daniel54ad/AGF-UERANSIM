@@ -1,0 +1,2 @@
+/usr/bin/ar qc liburs.a CMakeFiles/urs.dir/rls/gnb_entity.cpp.o CMakeFiles/urs.dir/rls/rls.cpp.o CMakeFiles/urs.dir/rls/ue_entity.cpp.o
+/usr/bin/ranlib liburs.a

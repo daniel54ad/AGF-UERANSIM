@@ -1,0 +1,2 @@
+/usr/bin/ar qc libnas.a CMakeFiles/nas.dir/base.cpp.o CMakeFiles/nas.dir/eap.cpp.o CMakeFiles/nas.dir/encode.cpp.o CMakeFiles/nas.dir/enums.cpp.o CMakeFiles/nas.dir/ie1.cpp.o CMakeFiles/nas.dir/ie2.cpp.o CMakeFiles/nas.dir/ie3.cpp.o CMakeFiles/nas.dir/ie4.cpp.o CMakeFiles/nas.dir/ie6.cpp.o CMakeFiles/nas.dir/msg.cpp.o CMakeFiles/nas.dir/nas.cpp.o CMakeFiles/nas.dir/proto_conf.cpp.o CMakeFiles/nas.dir/timer.cpp.o CMakeFiles/nas.dir/utils.cpp.o CMakeFiles/nas.dir/values.cpp.o
+/usr/bin/ranlib libnas.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc librrc.a CMakeFiles/rrc.dir/encode.cpp.o CMakeFiles/rrc.dir/rrc.cpp.o
+/usr/bin/ranlib librrc.a

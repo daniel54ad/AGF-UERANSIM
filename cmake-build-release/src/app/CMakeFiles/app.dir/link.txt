@@ -1,0 +1,2 @@
+/usr/bin/ar qc libapp.a CMakeFiles/app.dir/base_app.cpp.o CMakeFiles/app.dir/cli_base.cpp.o CMakeFiles/app.dir/cli_cmd.cpp.o CMakeFiles/app.dir/monitor.cpp.o CMakeFiles/app.dir/proc_table.cpp.o
+/usr/bin/ranlib libapp.a
