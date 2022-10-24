@@ -28,8 +28,6 @@ class UeAppTask : public NtsTask
     TaskBase *m_base;
     std::unique_ptr<Logger> m_logger;
 
-    udp::UdpServerTask *agfUdpServer;
-
     UeStatusInfo m_statusInfo;
     TunTask *m_tunTasks[16];
 
@@ -45,7 +43,7 @@ class UeAppTask : public NtsTask
     void onQuit() override;
 
   private:
-    void receiveStatusUpdate(NwUeStatusUpdate &msg);
+    OctetString receiveStatusUpdate(NwUeStatusUpdate &msg);
     void setupTunInterface(const PduSession *pduSession);
     OctetString generateOctet(int type, std::string name, std::string ueIp);
 

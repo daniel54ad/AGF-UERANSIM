@@ -16,28 +16,16 @@
 #include <utils/libc_error.hpp>
 #include <string>
 
-
 namespace nr::ue
 {
 
-UeAppTask::UeAppTask(TaskBase *base) : m_base{base}, agfUdpServer{}, m_statusInfo{}, m_tunTasks{}
+UeAppTask::UeAppTask(TaskBase *base) : m_base{base}, m_statusInfo{}, m_tunTasks{}
 {
     m_logger = m_base->logBase->makeUniqueLogger(m_base->config->getLoggerPrefix() + "app");
 }
 
 void UeAppTask::onStart()
 {
-    // add agfUdpServer initial
-    // need to add IP and port
-    try
-    {
-        agfUdpServer = new udp::UdpServerTask(std::string(cons::UeIp), 66666, this);
-        agfUdpServer->start();
-    }
-    catch (const LibError &e)
-    {
-        m_logger->err("agfUdpServer could not be created. %s", e.what());
-    }
 }
 
 void UeAppTask::onQuit()
@@ -51,8 +39,6 @@ void UeAppTask::onQuit()
             tunTask = nullptr;
         }
     }
-    agfUdpServer->quit();
-    delete agfUdpServer;
 }
 
 void UeAppTask::onLoop()
@@ -100,7 +86,16 @@ void UeAppTask::onLoop()
         break;
     }
     case NtsMessageType::UE_STATUS_UPDATE: {
-        receiveStatusUpdate(*dynamic_cast<NwUeStatusUpdate *>(msg));
+        NwUeStatusUpdate *w = dynamic_cast<NwUeStatusUpdate *>(msg);
+        OctetString ueInfoOctet = receiveStatusUpdate(*w);
+        if(ueInfoOctet.toHexString()=="66"){
+            m_logger->err("UEINFO octetstring create failed");
+        } else {
+            auto *nw = new NwAppToMr(NwAppToMr::UE_INFO_DELIVERY);
+            nw->psi = w->pduSession->id;
+            nw->data = std::move(ueInfoOctet);
+            m_base->mrTask->push(nw);
+        }
         break;
     }
     case NtsMessageType::UE_CLI_COMMAND: {
@@ -115,7 +110,7 @@ void UeAppTask::onLoop()
     delete msg;
 }
 
-void UeAppTask::receiveStatusUpdate(NwUeStatusUpdate &msg)
+OctetString UeAppTask::receiveStatusUpdate(NwUeStatusUpdate &msg)
 {
     if (msg.what == NwUeStatusUpdate::SESSION_ESTABLISHMENT)
     {
@@ -131,12 +126,16 @@ void UeAppTask::receiveStatusUpdate(NwUeStatusUpdate &msg)
         std::string ipAddress = utils::OctetStringToIp(session->pduAddress->pduAddressInformation);
         printf("UE SUCI: %s\n", m_base->config->getNodeName().c_str());
         printf("UE IP: %s\n", ipAddress.c_str());
-        OctetString msg = generateOctet(2, m_base->config->getNodeName().c_str(), ipAddress.c_str());
+        OctetString msgOctet = generateOctet(2, m_base->config->getNodeName().c_str(), ipAddress.c_str());
         m_logger->debug("octet finish");
-        agfUdpServer->send(InetAddress(utils::IpToOctetString(std::string(cons::AgentIp)), cons::AgentPort), msg);
         m_logger->debug("sent");
         setupTunInterface(session);
+        // m_logger->debug("tun create success");
+        return msgOctet;
     }
+    OctetString failOctet;
+    failOctet.appendOctet('f');
+    return failOctet;
 }
 
 void UeAppTask::setupTunInterface(const PduSession *pduSession)

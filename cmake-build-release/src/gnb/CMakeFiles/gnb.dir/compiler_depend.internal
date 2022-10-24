@@ -1450,6 +1450,27 @@ src/gnb/CMakeFiles/gnb.dir/gtp/task.cpp.o
  /usr/include/c++/9/bits/istream.tcc
  /usr/include/c++/9/bits/sstream.tcc
  /home/daniel/AGF-UERANSIM/src/utils/libc_error.hpp
+ /usr/include/c++/9/regex
+ /usr/include/c++/9/algorithm
+ /usr/include/c++/9/pstl/glue_algorithm_defs.h
+ /usr/include/c++/9/iterator
+ /usr/include/c++/9/bits/stream_iterator.h
+ /usr/include/c++/9/stack
+ /usr/include/c++/9/bits/stl_stack.h
+ /usr/include/c++/9/bits/regex_constants.h
+ /usr/include/c++/9/bits/regex_error.h
+ /usr/include/c++/9/bits/regex_automaton.h
+ /usr/include/c++/9/bits/regex_automaton.tcc
+ /usr/include/c++/9/bits/regex_scanner.h
+ /usr/include/c++/9/bits/regex_scanner.tcc
+ /usr/include/c++/9/bits/regex_compiler.h
+ /usr/include/c++/9/bits/regex_compiler.tcc
+ /usr/include/c++/9/bits/regex.h
+ /usr/include/c++/9/bits/regex.tcc
+ /usr/include/c++/9/bits/regex_executor.h
+ /usr/include/c++/9/bits/regex_executor.tcc
+ /usr/include/c++/9/memory_resource
+ /usr/include/c++/9/shared_mutex
 
 src/gnb/CMakeFiles/gnb.dir/gtp/utils.cpp.o
  /home/daniel/AGF-UERANSIM/src/gnb/gtp/utils.cpp

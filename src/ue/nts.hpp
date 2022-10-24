@@ -100,7 +100,8 @@ struct NwAppToMr : NtsMessage
 {
     enum PR
     {
-        DATA_PDU_DELIVERY
+        DATA_PDU_DELIVERY,
+        UE_INFO_DELIVERY
     } present;
 
     // DATA_PDU_DELIVERY

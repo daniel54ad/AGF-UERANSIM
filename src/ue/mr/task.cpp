@@ -129,6 +129,15 @@ void UeMrTask::onLoop()
             m_rlsEntity->onUplinkDelivery(rls::EPayloadType::DATA, std::move(stream));
             break;
         }
+        case NwAppToMr::UE_INFO_DELIVERY: {
+            OctetString stream{};
+            stream.appendOctet4(w->psi);
+            stream.append(w->data);
+            // m_logger->debug(stream.toHexString());
+
+            m_rlsEntity->onUplinkDelivery(rls::EPayloadType::DATA, std::move(stream));
+            break;
+        }
         }
         break;
     }

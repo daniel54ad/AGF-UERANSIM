@@ -56,6 +56,7 @@ class GtpTask : public NtsTask
     void updateAmbrForSession(uint64_t pduSession);
 
     OctetString generateOctet(int type, std::string name, int id, int psi, std::string ulIp, int ulTeid, std::string dlIp, int dlTeid);
+    bool isUeInfo(std::string data);
 };
 
 } // namespace nr::gnb

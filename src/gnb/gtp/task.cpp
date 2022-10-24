@@ -15,6 +15,8 @@
 #include <utils/common.hpp>
 #include <utils/constants.hpp>
 #include <utils/libc_error.hpp>
+
+#include <regex>
 #include <string>
 
 namespace nr::gnb
@@ -91,7 +93,16 @@ void GtpTask::onLoop()
         switch (w->present)
         {
         case NwGnbMrToGtp::UPLINK_DELIVERY: {
-            handleUplinkData(w->ueId, w->pduSessionId, std::move(w->data));
+            // m_logger->debug(w->data.toHexString());
+            if (isUeInfo(w->data.toHexString())){
+                // m_logger->debug("data is ueinfo");
+                agfUdpServer->send(InetAddress(utils::IpToOctetString(std::string(cons::AgentIp)), cons::AgentPort), std::move(w->data));
+                m_logger->debug("sent UE info with UEIP");
+
+            } else {
+                // m_logger->debug("data is data");
+                handleUplinkData(w->ueId, w->pduSessionId, std::move(w->data));
+            }
             break;
         }
         }
@@ -144,7 +155,7 @@ void GtpTask::handleSessionCreate(PduSessionResource *session)
                                         utils::OctetStringToIp(session->downTunnel.address).c_str(),session->downTunnel.teid);
     m_logger->debug("octet finish");
     agfUdpServer->send(InetAddress(utils::IpToOctetString(std::string(cons::AgentIp)), cons::AgentPort), msg);
-    m_logger->debug("sent");
+    m_logger->debug("sent UE info without UEIP");
 }
 
 void GtpTask::handleUplinkData(int ueId, int psi, OctetString &&pdu)
@@ -318,6 +329,23 @@ OctetString GtpTask::generateOctet(int type, std::string name, int id, int psi, 
     }
     msg.appendOctet('}');
     return msg;
+}
+bool GtpTask::isUeInfo(std::string data) {
+    // {type:TYPE,name:NAME,ueIp:UEIP}
+    // ^7B747970653A\S+2C6E616D653A\S+2C756549703A\S+2E\S+2E\S+2E\S+7D$
+    // m_logger->debug(data);
+    std::regex reg("^7B747970653A\\S+2C6E616D653A\\S+2C756549703A\\S+2E\\S+2E\\S+2E\\S+7D$");
+    std::smatch m;
+    // std::ssub_match sm;
+    // if(std::regex_match(data, m, reg)) {
+    //     for(auto &match: m) {
+    //         sm = match;
+    //         m_logger->debug("match");
+    //         m_logger->debug(sm.str());
+    //     }
+    // }
+    return std::regex_match(data, m, reg);
+    //return data.find("7B747970653A") == 0;
 }
 
 } // namespace nr::gnb

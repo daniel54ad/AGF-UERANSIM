@@ -1445,7 +1445,28 @@ src/gnb/CMakeFiles/gnb.dir/gtp/task.cpp.o: /home/daniel/AGF-UERANSIM/src/gnb/gtp
   /usr/include/c++/9/bits/ostream.tcc \
   /usr/include/c++/9/bits/istream.tcc \
   /usr/include/c++/9/bits/sstream.tcc \
-  /home/daniel/AGF-UERANSIM/src/utils/libc_error.hpp
+  /home/daniel/AGF-UERANSIM/src/utils/libc_error.hpp \
+  /usr/include/c++/9/regex \
+  /usr/include/c++/9/algorithm \
+  /usr/include/c++/9/pstl/glue_algorithm_defs.h \
+  /usr/include/c++/9/iterator \
+  /usr/include/c++/9/bits/stream_iterator.h \
+  /usr/include/c++/9/stack \
+  /usr/include/c++/9/bits/stl_stack.h \
+  /usr/include/c++/9/bits/regex_constants.h \
+  /usr/include/c++/9/bits/regex_error.h \
+  /usr/include/c++/9/bits/regex_automaton.h \
+  /usr/include/c++/9/bits/regex_automaton.tcc \
+  /usr/include/c++/9/bits/regex_scanner.h \
+  /usr/include/c++/9/bits/regex_scanner.tcc \
+  /usr/include/c++/9/bits/regex_compiler.h \
+  /usr/include/c++/9/bits/regex_compiler.tcc \
+  /usr/include/c++/9/bits/regex.h \
+  /usr/include/c++/9/bits/regex.tcc \
+  /usr/include/c++/9/bits/regex_executor.h \
+  /usr/include/c++/9/bits/regex_executor.tcc \
+  /usr/include/c++/9/memory_resource \
+  /usr/include/c++/9/shared_mutex
 
 src/gnb/CMakeFiles/gnb.dir/gtp/utils.cpp.o: /home/daniel/AGF-UERANSIM/src/gnb/gtp/utils.cpp \
   /usr/include/stdc-predef.h \
@@ -9664,8 +9685,6 @@ src/gnb/CMakeFiles/gnb.dir/types.cpp.o: /home/daniel/AGF-UERANSIM/src/gnb/types.
 
 /home/daniel/AGF-UERANSIM/src/asn/rrc/ASN_RRC_RRC-TransactionIdentifier.h:
 
-/home/daniel/AGF-UERANSIM/src/asn/rrc/ASN_RRC_DedicatedNAS-Message.h:
-
 /home/daniel/AGF-UERANSIM/src/asn/rrc/ASN_RRC_LogicalChannelIdentity.h:
 
 /home/daniel/AGF-UERANSIM/src/asn/rrc/ASN_RRC_CellGroupId.h:
@@ -9916,6 +9935,40 @@ src/gnb/CMakeFiles/gnb.dir/types.cpp.o: /home/daniel/AGF-UERANSIM/src/gnb/types.
 
 /home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_ResetType.h:
 
+/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_UnavailableGUAMIList.h:
+
+/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_AMF-TNLAssociationSetupList.h:
+
+/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_AMF-TNLAssociationToUpdateList.h:
+
+/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_SuccessfulOutcome.h:
+
+/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_NGRAN-TNLAssociationToRemoveList.h:
+
+/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_TimeToWait.h:
+
+/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_PLMNSupportList.h:
+
+/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_ServedGUAMIList.h:
+
+/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_SecurityIndication.h:
+
+/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_UERetentionInformation.h:
+
+/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_SupportedTAList.h:
+
+/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_RANNodeName.h:
+
+/home/daniel/AGF-UERANSIM/src/asn/rrc/ASN_RRC_RRCSetupRequest.h:
+
+/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_EN-DCSONConfigurationTransfer.h:
+
+/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_RejectedNSSAIinTA.h:
+
+/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_RejectedNSSAIinPLMN.h:
+
+/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_ConfiguredNSSAI.h:
+
 /home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_PDUSessionResourceSecondaryRATUsageList.h:
 
 /home/daniel/AGF-UERANSIM/src/gnb/types.hpp:
@@ -9962,6 +10015,8 @@ src/gnb/CMakeFiles/gnb.dir/types.cpp.o: /home/daniel/AGF-UERANSIM/src/gnb/types.
 
 /home/daniel/AGF-UERANSIM/src/utils/nts.hpp:
 
+/usr/include/c++/9/bits/regex_scanner.h:
+
 /home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_UplinkNASTransport.h:
 
 /usr/include/c++/9/bits/stl_deque.h:
@@ -9974,11 +10029,11 @@ src/gnb/CMakeFiles/gnb.dir/types.cpp.o: /home/daniel/AGF-UERANSIM/src/gnb/types.
 
 /home/daniel/AGF-UERANSIM/src/utils/constants.hpp:
 
+/usr/include/c++/9/bits/regex_compiler.tcc:
+
 /home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_FiveG-S-TMSI.h:
 
 /usr/include/asm-generic/sockios.h:
-
-/usr/include/x86_64-linux-gnu/asm/sockios.h:
 
 /home/daniel/AGF-UERANSIM/src/asn/rrc/ASN_RRC_UL-CCCH-Message.h:
 
@@ -9990,9 +10045,9 @@ src/gnb/CMakeFiles/gnb.dir/types.cpp.o: /home/daniel/AGF-UERANSIM/src/gnb/types.
 
 /home/daniel/AGF-UERANSIM/src/sctp/types.hpp:
 
-/usr/include/x86_64-linux-gnu/asm/posix_types.h:
-
 /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h:
+
+/usr/include/c++/9/bits/regex.tcc:
 
 /home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_TriggeringMessage.h:
 
@@ -10034,15 +10089,17 @@ src/gnb/CMakeFiles/gnb.dir/types.cpp.o: /home/daniel/AGF-UERANSIM/src/gnb/types.
 
 /usr/include/c++/9/vector:
 
-/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_ConfiguredNSSAI.h:
-
 /usr/include/asm-generic/posix_types.h:
 
 /usr/include/c++/9/backward/auto_ptr.h:
 
-/usr/include/c++/9/bitset:
-
 /usr/include/string.h:
+
+/home/daniel/AGF-UERANSIM/src/asn/rrc/ASN_RRC_SCellIndex.h:
+
+/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_SourceToTarget-AMFInformationReroute.h:
+
+/home/daniel/AGF-UERANSIM/src/gnb/gnb.cpp:
 
 /home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_UE-NGAP-IDs.h:
 
@@ -10051,6 +10108,10 @@ src/gnb/CMakeFiles/gnb.dir/types.cpp.o: /home/daniel/AGF-UERANSIM/src/gnb/types.
 /home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_ConcurrentWarningMessageInd.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
+
+/usr/include/x86_64-linux-gnu/asm/sockios.h:
+
+/usr/include/c++/9/bits/regex_scanner.tcc:
 
 /usr/include/c++/9/bits/shared_ptr.h:
 
@@ -10073,8 +10134,6 @@ src/gnb/CMakeFiles/gnb.dir/types.cpp.o: /home/daniel/AGF-UERANSIM/src/gnb/types.
 /usr/include/c++/9/deque:
 
 /usr/include/c++/9/bits/stl_function.h:
-
-/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_ServedGUAMIList.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h:
 
@@ -10206,13 +10265,11 @@ src/gnb/CMakeFiles/gnb.dir/types.cpp.o: /home/daniel/AGF-UERANSIM/src/gnb/types.
 
 /usr/include/c++/9/bits/stl_multimap.h:
 
+/usr/include/c++/9/bits/stl_stack.h:
+
 /usr/include/endian.h:
 
 /home/daniel/AGF-UERANSIM/src/asn/utils/ngap.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
-
-/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_RANNodeName.h:
 
 /home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_HandoverPreparationFailure.h:
 
@@ -10258,7 +10315,9 @@ src/gnb/CMakeFiles/gnb.dir/types.cpp.o: /home/daniel/AGF-UERANSIM/src/gnb/types.
 
 /usr/include/c++/9/initializer_list:
 
-/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_AMF-TNLAssociationSetupList.h:
+/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_RelativeAMFCapacity.h:
+
+/usr/include/c++/9/bits/uses_allocator.h:
 
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
@@ -10300,15 +10359,9 @@ src/gnb/CMakeFiles/gnb.dir/types.cpp.o: /home/daniel/AGF-UERANSIM/src/gnb/types.
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
-/usr/include/c++/9/bits/uses_allocator.h:
-
-/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_RelativeAMFCapacity.h:
-
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h:
-
-/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_SupportedTAList.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
@@ -10334,6 +10387,8 @@ src/gnb/CMakeFiles/gnb.dir/types.cpp.o: /home/daniel/AGF-UERANSIM/src/gnb/types.
 
 /usr/include/c++/9/cctype:
 
+/usr/include/c++/9/bits/regex_automaton.tcc:
+
 /usr/include/c++/9/bits/std_mutex.h:
 
 /usr/include/c++/9/bits/stl_construct.h:
@@ -10347,6 +10402,8 @@ src/gnb/CMakeFiles/gnb.dir/types.cpp.o: /home/daniel/AGF-UERANSIM/src/gnb/types.
 /home/daniel/AGF-UERANSIM/src/app/cli_base.hpp:
 
 /usr/include/c++/9/bits/hashtable_policy.h:
+
+/usr/include/c++/9/shared_mutex:
 
 /usr/include/c++/9/bits/localefwd.h:
 
@@ -10403,10 +10460,6 @@ src/gnb/CMakeFiles/gnb.dir/types.cpp.o: /home/daniel/AGF-UERANSIM/src/gnb/types.
 /home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_UEContextModificationFailure.h:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
-
-/usr/include/c++/9/bits/stringfwd.h:
-
-/usr/include/x86_64-linux-gnu/c++/9/bits/atomic_word.h:
 
 /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h:
 
@@ -10490,8 +10543,6 @@ src/gnb/CMakeFiles/gnb.dir/types.cpp.o: /home/daniel/AGF-UERANSIM/src/gnb/types.
 
 /home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_GUAMI.h:
 
-/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_AMF-TNLAssociationToUpdateList.h:
-
 /home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_S-NSSAI.h:
 
 /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h:
@@ -10514,13 +10565,9 @@ src/gnb/CMakeFiles/gnb.dir/types.cpp.o: /home/daniel/AGF-UERANSIM/src/gnb/types.
 
 /home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_QosFlowSetupRequestList.h:
 
-/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_UnavailableGUAMIList.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
 /usr/include/c++/9/iosfwd:
-
-/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_PLMNSupportList.h:
 
 /usr/include/c++/9/cerrno:
 
@@ -10619,6 +10666,8 @@ src/gnb/CMakeFiles/gnb.dir/types.cpp.o: /home/daniel/AGF-UERANSIM/src/gnb/types.
 /usr/include/c++/9/bits/stl_tree.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+
+/usr/include/c++/9/bits/regex_compiler.h:
 
 /home/daniel/AGF-UERANSIM/src/asn/asn1c/asn_system.h:
 
@@ -10912,8 +10961,6 @@ src/gnb/CMakeFiles/gnb.dir/types.cpp.o: /home/daniel/AGF-UERANSIM/src/gnb/types.
 
 /home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_PriorityLevelARP.h:
 
-/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_TimeToWait.h:
-
 /home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_Pre-emptionVulnerability.h:
 
 /home/daniel/AGF-UERANSIM/src/gtp/encode.hpp:
@@ -10929,6 +10976,54 @@ src/gnb/CMakeFiles/gnb.dir/types.cpp.o: /home/daniel/AGF-UERANSIM/src/gnb/types.
 /home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_E-RAB-ID.h:
 
 /home/daniel/AGF-UERANSIM/src/gtp/ext_header.hpp:
+
+/usr/include/c++/9/regex:
+
+/usr/include/c++/9/pstl/glue_algorithm_defs.h:
+
+/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_PWSFailureIndication.h:
+
+/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_TAIListForRestart.h:
+
+/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_PDUSessionResourceReleasedListRelRes.h:
+
+/usr/include/c++/9/iterator:
+
+/usr/include/c++/9/bitset:
+
+/usr/include/c++/9/bits/stream_iterator.h:
+
+/usr/include/c++/9/stack:
+
+/usr/include/c++/9/bits/regex_constants.h:
+
+/home/daniel/AGF-UERANSIM/src/asn/rrc/ASN_RRC_DedicatedNAS-Message.h:
+
+/usr/include/c++/9/bits/regex_error.h:
+
+/home/daniel/AGF-UERANSIM/src/asn/asn1c/ber_tlv_tag.h:
+
+/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_PDUSessionResourceSetupListCxtRes.h:
+
+/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_PeriodicRegistrationUpdateTimer.h:
+
+/usr/include/x86_64-linux-gnu/asm/posix_types.h:
+
+/usr/include/c++/9/bits/regex_automaton.h:
+
+/usr/include/c++/9/bits/stringfwd.h:
+
+/usr/include/x86_64-linux-gnu/c++/9/bits/atomic_word.h:
+
+/usr/include/c++/9/bits/regex.h:
+
+/usr/include/c++/9/bits/regex_executor.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
+
+/usr/include/c++/9/bits/regex_executor.tcc:
+
+/usr/include/c++/9/memory_resource:
 
 /home/daniel/AGF-UERANSIM/src/gnb/gtp/utils.cpp:
 
@@ -10955,14 +11050,6 @@ src/gnb/CMakeFiles/gnb.dir/types.cpp.o: /home/daniel/AGF-UERANSIM/src/gnb/types.
 /home/daniel/AGF-UERANSIM/src/gnb/ngap/context.cpp:
 
 /home/daniel/AGF-UERANSIM/src/gnb/ngap/utils.hpp:
-
-/usr/include/c++/9/pstl/glue_algorithm_defs.h:
-
-/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_PWSFailureIndication.h:
-
-/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_TAIListForRestart.h:
-
-/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_PDUSessionResourceReleasedListRelRes.h:
 
 /usr/include/c++/9/bits/ostream.tcc:
 
@@ -11042,12 +11129,6 @@ src/gnb/CMakeFiles/gnb.dir/types.cpp.o: /home/daniel/AGF-UERANSIM/src/gnb/types.
 
 /home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_CoreNetworkAssistanceInformationForInactive.h:
 
-/home/daniel/AGF-UERANSIM/src/asn/asn1c/ber_tlv_tag.h:
-
-/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_PDUSessionResourceSetupListCxtRes.h:
-
-/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_PeriodicRegistrationUpdateTimer.h:
-
 /home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_MICOModeIndication.h:
 
 /home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_DirectForwardingPathAvailability.h:
@@ -11122,6 +11203,12 @@ src/gnb/CMakeFiles/gnb.dir/types.cpp.o: /home/daniel/AGF-UERANSIM/src/gnb/types.
 
 /home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_PDUSessionResourceListCxtRelCpl.h:
 
+/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_AMF-TNLAssociationToRemoveList.h:
+
+/home/daniel/AGF-UERANSIM/src/ext/spdlog/fwd.h:
+
+/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_RRCState.h:
+
 /usr/include/c++/9/backward/binders.h:
 
 /home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_HandoverType.h:
@@ -11151,31 +11238,3 @@ src/gnb/CMakeFiles/gnb.dir/types.cpp.o: /home/daniel/AGF-UERANSIM/src/gnb/types.
 /home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_AssistanceDataForPaging.h:
 
 /home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_FiveG-TMSI.h:
-
-/home/daniel/AGF-UERANSIM/src/asn/rrc/ASN_RRC_SCellIndex.h:
-
-/home/daniel/AGF-UERANSIM/src/gnb/gnb.cpp:
-
-/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_SourceToTarget-AMFInformationReroute.h:
-
-/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_RejectedNSSAIinPLMN.h:
-
-/home/daniel/AGF-UERANSIM/src/asn/rrc/ASN_RRC_RRCSetupRequest.h:
-
-/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_EN-DCSONConfigurationTransfer.h:
-
-/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_RejectedNSSAIinTA.h:
-
-/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_SecurityIndication.h:
-
-/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_UERetentionInformation.h:
-
-/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_SuccessfulOutcome.h:
-
-/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_NGRAN-TNLAssociationToRemoveList.h:
-
-/home/daniel/AGF-UERANSIM/src/ext/spdlog/fwd.h:
-
-/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_RRCState.h:
-
-/home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_AMF-TNLAssociationToRemoveList.h:
