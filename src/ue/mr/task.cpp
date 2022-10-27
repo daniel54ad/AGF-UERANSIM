@@ -125,7 +125,8 @@ void UeMrTask::onLoop()
             OctetString stream{};
             stream.appendOctet4(w->psi);
             stream.append(w->data);
-
+            // not MAC
+            // m_logger->debug(w->data.toHexString());
             m_rlsEntity->onUplinkDelivery(rls::EPayloadType::DATA, std::move(stream));
             break;
         }
