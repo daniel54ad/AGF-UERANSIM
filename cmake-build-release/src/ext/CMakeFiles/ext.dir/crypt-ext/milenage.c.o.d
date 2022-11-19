@@ -1,7 +1,7 @@
 src/ext/CMakeFiles/ext.dir/crypt-ext/milenage.c.o: \
- /home/daniel/AGF-UERANSIM/src/ext/crypt-ext/milenage.c \
+ /home/sdn/AGF-UERANSIM/src/ext/crypt-ext/milenage.c \
  /usr/include/stdc-predef.h \
- /home/daniel/AGF-UERANSIM/src/ext/crypt-ext/milenage.h \
+ /home/sdn/AGF-UERANSIM/src/ext/crypt-ext/milenage.h \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \

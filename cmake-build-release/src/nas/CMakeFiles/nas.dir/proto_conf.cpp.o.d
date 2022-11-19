@@ -1,8 +1,6 @@
 src/nas/CMakeFiles/nas.dir/proto_conf.cpp.o: \
- /home/daniel/AGF-UERANSIM/src/nas/proto_conf.cpp \
- /usr/include/stdc-predef.h \
- /home/daniel/AGF-UERANSIM/src/nas/proto_conf.hpp \
- /usr/include/c++/9/cstddef \
+ /home/sdn/AGF-UERANSIM/src/nas/proto_conf.cpp /usr/include/stdc-predef.h \
+ /home/sdn/AGF-UERANSIM/src/nas/proto_conf.hpp /usr/include/c++/9/cstddef \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -148,9 +146,9 @@ src/nas/CMakeFiles/nas.dir/proto_conf.cpp.o: \
  /usr/include/c++/9/backward/auto_ptr.h \
  /usr/include/c++/9/pstl/glue_memory_defs.h \
  /usr/include/c++/9/pstl/execution_defs.h \
- /home/daniel/AGF-UERANSIM/src/utils/octet_string.hpp \
- /home/daniel/AGF-UERANSIM/src/utils/octet.hpp \
- /home/daniel/AGF-UERANSIM/src/utils/json.hpp /usr/include/c++/9/map \
+ /home/sdn/AGF-UERANSIM/src/utils/octet_string.hpp \
+ /home/sdn/AGF-UERANSIM/src/utils/octet.hpp \
+ /home/sdn/AGF-UERANSIM/src/utils/json.hpp /usr/include/c++/9/map \
  /usr/include/c++/9/bits/stl_tree.h /usr/include/c++/9/bits/node_handle.h \
  /usr/include/c++/9/optional \
  /usr/include/c++/9/bits/enable_special_members.h \
@@ -159,5 +157,5 @@ src/nas/CMakeFiles/nas.dir/proto_conf.cpp.o: \
  /usr/include/c++/9/bits/stl_vector.h \
  /usr/include/c++/9/bits/stl_bvector.h /usr/include/c++/9/bits/vector.tcc \
  /usr/include/c++/9/bitset /usr/include/c++/9/cassert \
- /usr/include/assert.h /home/daniel/AGF-UERANSIM/src/utils/octet_view.hpp \
- /home/daniel/AGF-UERANSIM/src/utils/bits.hpp
+ /usr/include/assert.h /home/sdn/AGF-UERANSIM/src/utils/octet_view.hpp \
+ /home/sdn/AGF-UERANSIM/src/utils/bits.hpp

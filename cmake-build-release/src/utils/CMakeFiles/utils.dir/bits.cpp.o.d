@@ -1,6 +1,6 @@
 src/utils/CMakeFiles/utils.dir/bits.cpp.o: \
- /home/daniel/AGF-UERANSIM/src/utils/bits.cpp /usr/include/stdc-predef.h \
- /home/daniel/AGF-UERANSIM/src/utils/bits.hpp /usr/include/c++/9/bitset \
+ /home/sdn/AGF-UERANSIM/src/utils/bits.cpp /usr/include/stdc-predef.h \
+ /home/sdn/AGF-UERANSIM/src/utils/bits.hpp /usr/include/c++/9/bitset \
  /usr/include/c++/9/string \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \

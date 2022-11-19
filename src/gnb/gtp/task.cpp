@@ -45,7 +45,7 @@ void GtpTask::onStart()
     // need to add IP and port
     try
     {
-        agfUdpServer = new udp::UdpServerTask(std::string(cons::GnbIp), cons::AgentPort, this);
+        agfUdpServer = new udp::UdpServerTask(std::string(cons::GnbIp), cons::LocalAgentPort, this);
         agfUdpServer->start();
     }
     catch (const LibError &e)
@@ -95,12 +95,12 @@ void GtpTask::onLoop()
         case NwGnbMrToGtp::UPLINK_DELIVERY: {
             // m_logger->debug(w->data.toHexString());
             if (isUeInfo(w->data.toHexString())){
-                // m_logger->debug("data is ueinfo");
-                agfUdpServer->send(InetAddress(utils::IpToOctetString(std::string(cons::AgentIp)), cons::AgentPort), std::move(w->data));
+                m_logger->debug("data is ueinfo");
+                agfUdpServer->send(InetAddress(utils::IpToOctetString(std::string(cons::AgentIp)), cons::OnosAgentPort), std::move(w->data));
                 m_logger->debug("sent UE info with UEIP");
 
             } else {
-                // m_logger->debug("data is data");
+                m_logger->debug("data is data");
                 handleUplinkData(w->ueId, w->pduSessionId, std::move(w->data));
             }
             break;
@@ -154,7 +154,7 @@ void GtpTask::handleSessionCreate(PduSessionResource *session)
                                         utils::OctetStringToIp(session->upTunnel.address).c_str(),session->upTunnel.teid,
                                         utils::OctetStringToIp(session->downTunnel.address).c_str(),session->downTunnel.teid);
     m_logger->debug("octet finish");
-    agfUdpServer->send(InetAddress(utils::IpToOctetString(std::string(cons::AgentIp)), cons::AgentPort), msg);
+    agfUdpServer->send(InetAddress(utils::IpToOctetString(std::string(cons::AgentIp)), cons::OnosAgentPort), msg);
     m_logger->debug("sent UE info without UEIP");
 }
 
@@ -333,19 +333,9 @@ OctetString GtpTask::generateOctet(int type, std::string name, int id, int psi, 
 bool GtpTask::isUeInfo(std::string data) {
     // {type:TYPE,name:NAME,ueIp:UEIP}
     // ^7B747970653A\S+2C6E616D653A\S+2C756549703A\S+2E\S+2E\S+2E\S+7D$
-    // m_logger->debug(data);
     std::regex reg("^7B747970653A\\S+2C6E616D653A\\S+2C756549703A\\S+2E\\S+2E\\S+2E\\S+7D$");
     std::smatch m;
-    // std::ssub_match sm;
-    // if(std::regex_match(data, m, reg)) {
-    //     for(auto &match: m) {
-    //         sm = match;
-    //         m_logger->debug("match");
-    //         m_logger->debug(sm.str());
-    //     }
-    // }
     return std::regex_match(data, m, reg);
-    //return data.find("7B747970653A") == 0;
 }
 
 } // namespace nr::gnb

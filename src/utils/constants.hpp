@@ -23,14 +23,15 @@ struct cons
 
     // Some IP value
     // gNB local WAN IP
-    static constexpr const char *GnbIp = "10.0.2.15";
+    static constexpr const char *GnbIp = "192.168.30.2";
     // UE local control IP (WAN)
-    static constexpr const char *UeIp = "10.0.2.15";
-    static constexpr const char *AgentIp = "140.113.194.248";
+    static constexpr const char *UeModuleIp = "192.168.30.2";
+    static constexpr const char *AgentIp = "127.0.0.1";
 
     // Some port values
     // controller communication port
-    static constexpr const uint16_t AgentPort = 55555;
+    static constexpr const uint16_t OnosAgentPort = 55555;
+    static constexpr const uint16_t LocalAgentPort = 44444;
     static constexpr const uint16_t GtpPort = 2152;
     static constexpr const uint16_t PortalPort = 4997;
 

@@ -1,10 +1,10 @@
 src/udp/CMakeFiles/udp.dir/server.cpp.o: \
- /home/daniel/AGF-UERANSIM/src/udp/server.cpp /usr/include/stdc-predef.h \
- /home/daniel/AGF-UERANSIM/src/udp/server.hpp \
- /home/daniel/AGF-UERANSIM/src/utils/network.hpp \
- /home/daniel/AGF-UERANSIM/src/utils/octet_string.hpp \
- /home/daniel/AGF-UERANSIM/src/utils/octet.hpp \
- /home/daniel/AGF-UERANSIM/src/utils/json.hpp \
+ /home/sdn/AGF-UERANSIM/src/udp/server.cpp /usr/include/stdc-predef.h \
+ /home/sdn/AGF-UERANSIM/src/udp/server.hpp \
+ /home/sdn/AGF-UERANSIM/src/utils/network.hpp \
+ /home/sdn/AGF-UERANSIM/src/utils/octet_string.hpp \
+ /home/sdn/AGF-UERANSIM/src/utils/octet.hpp \
+ /home/sdn/AGF-UERANSIM/src/utils/json.hpp \
  /usr/include/c++/9/initializer_list \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \

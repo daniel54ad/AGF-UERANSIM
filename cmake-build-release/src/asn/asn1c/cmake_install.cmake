@@ -1,4 +1,4 @@
-# Install script for directory: /home/daniel/AGF-UERANSIM/src/asn/asn1c
+# Install script for directory: /home/sdn/AGF-UERANSIM/src/asn/asn1c
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

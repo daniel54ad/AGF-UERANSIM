@@ -1,12 +1,12 @@
 src/udp/CMakeFiles/udp.dir/server_task.cpp.o: \
- /home/daniel/AGF-UERANSIM/src/udp/server_task.cpp \
+ /home/sdn/AGF-UERANSIM/src/udp/server_task.cpp \
  /usr/include/stdc-predef.h \
- /home/daniel/AGF-UERANSIM/src/udp/server_task.hpp \
- /home/daniel/AGF-UERANSIM/src/udp/server.hpp \
- /home/daniel/AGF-UERANSIM/src/utils/network.hpp \
- /home/daniel/AGF-UERANSIM/src/utils/octet_string.hpp \
- /home/daniel/AGF-UERANSIM/src/utils/octet.hpp \
- /home/daniel/AGF-UERANSIM/src/utils/json.hpp \
+ /home/sdn/AGF-UERANSIM/src/udp/server_task.hpp \
+ /home/sdn/AGF-UERANSIM/src/udp/server.hpp \
+ /home/sdn/AGF-UERANSIM/src/utils/network.hpp \
+ /home/sdn/AGF-UERANSIM/src/utils/octet_string.hpp \
+ /home/sdn/AGF-UERANSIM/src/utils/octet.hpp \
+ /home/sdn/AGF-UERANSIM/src/utils/json.hpp \
  /usr/include/c++/9/initializer_list \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -181,8 +181,8 @@ src/udp/CMakeFiles/udp.dir/server_task.cpp.o: \
  /usr/include/asm-generic/sockios.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
  /usr/include/x86_64-linux-gnu/bits/socket2.h \
- /home/daniel/AGF-UERANSIM/src/utils/nts.hpp \
- /home/daniel/AGF-UERANSIM/src/utils/scoped_thread.hpp \
+ /home/sdn/AGF-UERANSIM/src/utils/nts.hpp \
+ /home/sdn/AGF-UERANSIM/src/utils/scoped_thread.hpp \
  /usr/include/c++/9/atomic /usr/include/c++/9/chrono \
  /usr/include/c++/9/ratio /usr/include/c++/9/ctime \
  /usr/include/c++/9/bits/parse_numbers.h \

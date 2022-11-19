@@ -1,7 +1,7 @@
 src/ext/CMakeFiles/ext.dir/crypt-ext/sha256.c.o: \
- /home/daniel/AGF-UERANSIM/src/ext/crypt-ext/sha256.c \
+ /home/sdn/AGF-UERANSIM/src/ext/crypt-ext/sha256.c \
  /usr/include/stdc-predef.h \
- /home/daniel/AGF-UERANSIM/src/ext/crypt-ext/sha256.h \
+ /home/sdn/AGF-UERANSIM/src/ext/crypt-ext/sha256.h \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -45,4 +45,4 @@ src/ext/CMakeFiles/ext.dir/crypt-ext/sha256.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
- /home/daniel/AGF-UERANSIM/src/ext/crypt-ext/rotate-bits.h
+ /home/sdn/AGF-UERANSIM/src/ext/crypt-ext/rotate-bits.h

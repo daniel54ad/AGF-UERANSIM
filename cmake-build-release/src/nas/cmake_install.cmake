@@ -1,4 +1,4 @@
-# Install script for directory: /home/daniel/AGF-UERANSIM/src/nas
+# Install script for directory: /home/sdn/AGF-UERANSIM/src/nas
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

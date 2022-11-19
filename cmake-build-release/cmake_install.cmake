@@ -1,4 +1,4 @@
-# Install script for directory: /home/daniel/AGF-UERANSIM
+# Install script for directory: /home/sdn/AGF-UERANSIM
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,87 +44,87 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/daniel/AGF-UERANSIM/cmake-build-release/src/ext/cmake_install.cmake")
+  include("/home/sdn/AGF-UERANSIM/cmake-build-release/src/ext/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/daniel/AGF-UERANSIM/cmake-build-release/src/asn/asn1c/cmake_install.cmake")
+  include("/home/sdn/AGF-UERANSIM/cmake-build-release/src/asn/asn1c/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/daniel/AGF-UERANSIM/cmake-build-release/src/asn/rrc/cmake_install.cmake")
+  include("/home/sdn/AGF-UERANSIM/cmake-build-release/src/asn/rrc/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/daniel/AGF-UERANSIM/cmake-build-release/src/asn/ngap/cmake_install.cmake")
+  include("/home/sdn/AGF-UERANSIM/cmake-build-release/src/asn/ngap/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/daniel/AGF-UERANSIM/cmake-build-release/src/asn/utils/cmake_install.cmake")
+  include("/home/sdn/AGF-UERANSIM/cmake-build-release/src/asn/utils/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/daniel/AGF-UERANSIM/cmake-build-release/src/utils/cmake_install.cmake")
+  include("/home/sdn/AGF-UERANSIM/cmake-build-release/src/utils/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/daniel/AGF-UERANSIM/cmake-build-release/src/sctp/cmake_install.cmake")
+  include("/home/sdn/AGF-UERANSIM/cmake-build-release/src/sctp/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/daniel/AGF-UERANSIM/cmake-build-release/src/gnb/cmake_install.cmake")
+  include("/home/sdn/AGF-UERANSIM/cmake-build-release/src/gnb/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/daniel/AGF-UERANSIM/cmake-build-release/src/rlc/cmake_install.cmake")
+  include("/home/sdn/AGF-UERANSIM/cmake-build-release/src/rlc/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/daniel/AGF-UERANSIM/cmake-build-release/src/nas/cmake_install.cmake")
+  include("/home/sdn/AGF-UERANSIM/cmake-build-release/src/nas/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/daniel/AGF-UERANSIM/cmake-build-release/src/rrc/cmake_install.cmake")
+  include("/home/sdn/AGF-UERANSIM/cmake-build-release/src/rrc/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/daniel/AGF-UERANSIM/cmake-build-release/src/gtp/cmake_install.cmake")
+  include("/home/sdn/AGF-UERANSIM/cmake-build-release/src/gtp/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/daniel/AGF-UERANSIM/cmake-build-release/src/udp/cmake_install.cmake")
+  include("/home/sdn/AGF-UERANSIM/cmake-build-release/src/udp/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/daniel/AGF-UERANSIM/cmake-build-release/src/app/cmake_install.cmake")
+  include("/home/sdn/AGF-UERANSIM/cmake-build-release/src/app/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/daniel/AGF-UERANSIM/cmake-build-release/src/urs/cmake_install.cmake")
+  include("/home/sdn/AGF-UERANSIM/cmake-build-release/src/urs/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/daniel/AGF-UERANSIM/cmake-build-release/src/crypt/cmake_install.cmake")
+  include("/home/sdn/AGF-UERANSIM/cmake-build-release/src/crypt/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/daniel/AGF-UERANSIM/cmake-build-release/src/ue/cmake_install.cmake")
+  include("/home/sdn/AGF-UERANSIM/cmake-build-release/src/ue/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -135,5 +135,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/daniel/AGF-UERANSIM/cmake-build-release/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/sdn/AGF-UERANSIM/cmake-build-release/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

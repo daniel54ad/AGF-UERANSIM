@@ -1,4 +1,4 @@
-# Install script for directory: /home/daniel/AGF-UERANSIM/src/udp
+# Install script for directory: /home/sdn/AGF-UERANSIM/src/udp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

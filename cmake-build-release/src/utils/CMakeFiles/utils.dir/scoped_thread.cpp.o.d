@@ -1,7 +1,7 @@
 src/utils/CMakeFiles/utils.dir/scoped_thread.cpp.o: \
- /home/daniel/AGF-UERANSIM/src/utils/scoped_thread.cpp \
+ /home/sdn/AGF-UERANSIM/src/utils/scoped_thread.cpp \
  /usr/include/stdc-predef.h \
- /home/daniel/AGF-UERANSIM/src/utils/scoped_thread.hpp \
+ /home/sdn/AGF-UERANSIM/src/utils/scoped_thread.hpp \
  /usr/include/pthread.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \

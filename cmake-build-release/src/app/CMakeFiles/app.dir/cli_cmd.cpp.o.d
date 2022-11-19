@@ -1,6 +1,6 @@
 src/app/CMakeFiles/app.dir/cli_cmd.cpp.o: \
- /home/daniel/AGF-UERANSIM/src/app/cli_cmd.cpp /usr/include/stdc-predef.h \
- /home/daniel/AGF-UERANSIM/src/app/cli_cmd.hpp /usr/include/c++/9/memory \
+ /home/sdn/AGF-UERANSIM/src/app/cli_cmd.cpp /usr/include/stdc-predef.h \
+ /home/sdn/AGF-UERANSIM/src/app/cli_cmd.hpp /usr/include/c++/9/memory \
  /usr/include/c++/9/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -170,14 +170,14 @@ src/app/CMakeFiles/app.dir/cli_cmd.cpp.o: \
  /usr/include/c++/9/bits/basic_ios.tcc /usr/include/c++/9/ostream \
  /usr/include/c++/9/bits/ostream.tcc /usr/include/c++/9/bits/istream.tcc \
  /usr/include/c++/9/bits/sstream.tcc \
- /home/daniel/AGF-UERANSIM/src/utils/common.hpp \
- /home/daniel/AGF-UERANSIM/src/utils/common_types.hpp \
- /home/daniel/AGF-UERANSIM/src/utils/json.hpp \
- /home/daniel/AGF-UERANSIM/src/utils/octet.hpp /usr/include/c++/9/bitset \
+ /home/sdn/AGF-UERANSIM/src/utils/common.hpp \
+ /home/sdn/AGF-UERANSIM/src/utils/common_types.hpp \
+ /home/sdn/AGF-UERANSIM/src/utils/json.hpp \
+ /home/sdn/AGF-UERANSIM/src/utils/octet.hpp /usr/include/c++/9/bitset \
  /usr/include/c++/9/cassert /usr/include/assert.h \
- /home/daniel/AGF-UERANSIM/src/utils/octet_string.hpp \
+ /home/sdn/AGF-UERANSIM/src/utils/octet_string.hpp \
  /usr/include/c++/9/cstddef \
- /home/daniel/AGF-UERANSIM/src/utils/time_stamp.hpp \
+ /home/sdn/AGF-UERANSIM/src/utils/time_stamp.hpp \
  /usr/include/c++/9/iomanip /usr/include/c++/9/locale \
  /usr/include/c++/9/bits/locale_facets_nonio.h /usr/include/c++/9/ctime \
  /usr/include/x86_64-linux-gnu/c++/9/bits/time_members.h \
@@ -186,9 +186,9 @@ src/app/CMakeFiles/app.dir/cli_cmd.cpp.o: \
  /usr/include/c++/9/bits/locale_facets_nonio.tcc \
  /usr/include/c++/9/bits/locale_conv.h \
  /usr/include/c++/9/bits/quoted_string.h \
- /home/daniel/AGF-UERANSIM/src/utils/constants.hpp \
- /home/daniel/AGF-UERANSIM/src/utils/options.hpp \
- /usr/include/c++/9/cstring /usr/include/string.h /usr/include/strings.h \
+ /home/sdn/AGF-UERANSIM/src/utils/constants.hpp \
+ /home/sdn/AGF-UERANSIM/src/utils/options.hpp /usr/include/c++/9/cstring \
+ /usr/include/string.h /usr/include/strings.h \
  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
  /usr/include/c++/9/unordered_map /usr/include/c++/9/bits/hashtable.h \

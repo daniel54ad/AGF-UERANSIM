@@ -1,4 +1,4 @@
-# Install script for directory: /home/daniel/AGF-UERANSIM/src/crypt
+# Install script for directory: /home/sdn/AGF-UERANSIM/src/crypt
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

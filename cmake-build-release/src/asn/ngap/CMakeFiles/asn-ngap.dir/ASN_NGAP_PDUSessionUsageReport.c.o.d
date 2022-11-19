@@ -1,10 +1,9 @@
 src/asn/ngap/CMakeFiles/asn-ngap.dir/ASN_NGAP_PDUSessionUsageReport.c.o: \
- /home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_PDUSessionUsageReport.c \
+ /home/sdn/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_PDUSessionUsageReport.c \
  /usr/include/stdc-predef.h \
- /home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_PDUSessionUsageReport.h \
- /home/daniel/AGF-UERANSIM/src/asn/asn1c/asn_application.h \
- /home/daniel/AGF-UERANSIM/src/asn/asn1c/asn_system.h \
- /usr/include/stdio.h \
+ /home/sdn/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_PDUSessionUsageReport.h \
+ /home/sdn/AGF-UERANSIM/src/asn/asn1c/asn_application.h \
+ /home/sdn/AGF-UERANSIM/src/asn/asn1c/asn_system.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -88,32 +87,32 @@ src/asn/ngap/CMakeFiles/asn-ngap.dir/ASN_NGAP_PDUSessionUsageReport.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
  /usr/include/x86_64-linux-gnu/bits/socket2.h \
  /usr/include/x86_64-linux-gnu/bits/in.h \
- /home/daniel/AGF-UERANSIM/src/asn/asn1c/asn_codecs.h \
- /home/daniel/AGF-UERANSIM/src/asn/asn1c/constr_TYPE.h \
- /home/daniel/AGF-UERANSIM/src/asn/asn1c/ber_tlv_length.h \
- /home/daniel/AGF-UERANSIM/src/asn/asn1c/ber_tlv_tag.h \
- /home/daniel/AGF-UERANSIM/src/asn/asn1c/ber_decoder.h \
- /home/daniel/AGF-UERANSIM/src/asn/asn1c/der_encoder.h \
- /home/daniel/AGF-UERANSIM/src/asn/asn1c/xer_decoder.h \
- /home/daniel/AGF-UERANSIM/src/asn/asn1c/xer_encoder.h \
- /home/daniel/AGF-UERANSIM/src/asn/asn1c/per_decoder.h \
- /home/daniel/AGF-UERANSIM/src/asn/asn1c/per_support.h \
- /home/daniel/AGF-UERANSIM/src/asn/asn1c/asn_system.h \
- /home/daniel/AGF-UERANSIM/src/asn/asn1c/asn_bit_data.h \
- /home/daniel/AGF-UERANSIM/src/asn/asn1c/per_encoder.h \
- /home/daniel/AGF-UERANSIM/src/asn/asn1c/constraints.h \
- /home/daniel/AGF-UERANSIM/src/asn/asn1c/asn_random_fill.h \
- /home/daniel/AGF-UERANSIM/src/asn/asn1c/NativeEnumerated.h \
- /home/daniel/AGF-UERANSIM/src/asn/asn1c/NativeInteger.h \
- /home/daniel/AGF-UERANSIM/src/asn/asn1c/INTEGER.h \
- /home/daniel/AGF-UERANSIM/src/asn/asn1c/asn_codecs_prim.h \
- /home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_VolumeTimedReportList.h \
- /home/daniel/AGF-UERANSIM/src/asn/asn1c/asn_SEQUENCE_OF.h \
- /home/daniel/AGF-UERANSIM/src/asn/asn1c/asn_SET_OF.h \
- /home/daniel/AGF-UERANSIM/src/asn/asn1c/constr_SEQUENCE_OF.h \
- /home/daniel/AGF-UERANSIM/src/asn/asn1c/constr_SET_OF.h \
- /home/daniel/AGF-UERANSIM/src/asn/asn1c/asn_internal.h \
- /home/daniel/AGF-UERANSIM/src/asn/asn1c/asn_application.h \
+ /home/sdn/AGF-UERANSIM/src/asn/asn1c/asn_codecs.h \
+ /home/sdn/AGF-UERANSIM/src/asn/asn1c/constr_TYPE.h \
+ /home/sdn/AGF-UERANSIM/src/asn/asn1c/ber_tlv_length.h \
+ /home/sdn/AGF-UERANSIM/src/asn/asn1c/ber_tlv_tag.h \
+ /home/sdn/AGF-UERANSIM/src/asn/asn1c/ber_decoder.h \
+ /home/sdn/AGF-UERANSIM/src/asn/asn1c/der_encoder.h \
+ /home/sdn/AGF-UERANSIM/src/asn/asn1c/xer_decoder.h \
+ /home/sdn/AGF-UERANSIM/src/asn/asn1c/xer_encoder.h \
+ /home/sdn/AGF-UERANSIM/src/asn/asn1c/per_decoder.h \
+ /home/sdn/AGF-UERANSIM/src/asn/asn1c/per_support.h \
+ /home/sdn/AGF-UERANSIM/src/asn/asn1c/asn_system.h \
+ /home/sdn/AGF-UERANSIM/src/asn/asn1c/asn_bit_data.h \
+ /home/sdn/AGF-UERANSIM/src/asn/asn1c/per_encoder.h \
+ /home/sdn/AGF-UERANSIM/src/asn/asn1c/constraints.h \
+ /home/sdn/AGF-UERANSIM/src/asn/asn1c/asn_random_fill.h \
+ /home/sdn/AGF-UERANSIM/src/asn/asn1c/NativeEnumerated.h \
+ /home/sdn/AGF-UERANSIM/src/asn/asn1c/NativeInteger.h \
+ /home/sdn/AGF-UERANSIM/src/asn/asn1c/INTEGER.h \
+ /home/sdn/AGF-UERANSIM/src/asn/asn1c/asn_codecs_prim.h \
+ /home/sdn/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_VolumeTimedReportList.h \
+ /home/sdn/AGF-UERANSIM/src/asn/asn1c/asn_SEQUENCE_OF.h \
+ /home/sdn/AGF-UERANSIM/src/asn/asn1c/asn_SET_OF.h \
+ /home/sdn/AGF-UERANSIM/src/asn/asn1c/constr_SEQUENCE_OF.h \
+ /home/sdn/AGF-UERANSIM/src/asn/asn1c/constr_SET_OF.h \
+ /home/sdn/AGF-UERANSIM/src/asn/asn1c/asn_internal.h \
+ /home/sdn/AGF-UERANSIM/src/asn/asn1c/asn_application.h \
  /usr/include/assert.h \
- /home/daniel/AGF-UERANSIM/src/asn/asn1c/constr_SEQUENCE.h \
- /home/daniel/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_ProtocolExtensionContainer.h
+ /home/sdn/AGF-UERANSIM/src/asn/asn1c/constr_SEQUENCE.h \
+ /home/sdn/AGF-UERANSIM/src/asn/ngap/ASN_NGAP_ProtocolExtensionContainer.h

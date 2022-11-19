@@ -1,6 +1,6 @@
 src/utils/CMakeFiles/utils.dir/json.cpp.o: \
- /home/daniel/AGF-UERANSIM/src/utils/json.cpp /usr/include/stdc-predef.h \
- /home/daniel/AGF-UERANSIM/src/utils/json.hpp \
+ /home/sdn/AGF-UERANSIM/src/utils/json.cpp /usr/include/stdc-predef.h \
+ /home/sdn/AGF-UERANSIM/src/utils/json.hpp \
  /usr/include/c++/9/initializer_list \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \

@@ -1,7 +1,7 @@
 src/utils/CMakeFiles/utils.dir/time_stamp.cpp.o: \
- /home/daniel/AGF-UERANSIM/src/utils/time_stamp.cpp \
+ /home/sdn/AGF-UERANSIM/src/utils/time_stamp.cpp \
  /usr/include/stdc-predef.h \
- /home/daniel/AGF-UERANSIM/src/utils/time_stamp.hpp \
+ /home/sdn/AGF-UERANSIM/src/utils/time_stamp.hpp \
  /usr/include/c++/9/cstdint \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \

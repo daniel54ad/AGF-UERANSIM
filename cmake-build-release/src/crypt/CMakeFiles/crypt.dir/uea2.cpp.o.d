@@ -1,6 +1,6 @@
 src/crypt/CMakeFiles/crypt.dir/uea2.cpp.o: \
- /home/daniel/AGF-UERANSIM/src/crypt/uea2.cpp /usr/include/stdc-predef.h \
- /home/daniel/AGF-UERANSIM/src/crypt/uea2.hpp /usr/include/c++/9/cstdint \
+ /home/sdn/AGF-UERANSIM/src/crypt/uea2.cpp /usr/include/stdc-predef.h \
+ /home/sdn/AGF-UERANSIM/src/crypt/uea2.hpp /usr/include/c++/9/cstdint \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -19,4 +19,4 @@ src/crypt/CMakeFiles/crypt.dir/uea2.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/daniel/AGF-UERANSIM/src/crypt/snow3g.hpp
+ /home/sdn/AGF-UERANSIM/src/crypt/snow3g.hpp
