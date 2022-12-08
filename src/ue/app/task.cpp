@@ -124,9 +124,9 @@ OctetString UeAppTask::receiveStatusUpdate(NwUeStatusUpdate &msg)
         m_statusInfo.pduSessions[session->id] = std::move(sessionInfo);
 
         std::string ipAddress = utils::OctetStringToIp(session->pduAddress->pduAddressInformation);
-        printf("UE SUCI: %s\n", m_base->config->getNodeName().c_str());
-        printf("UE IP: %s\n", ipAddress.c_str());
-        OctetString msgOctet = generateOctet(2, m_base->config->getNodeName().c_str(), ipAddress.c_str());
+        // printf("UE SUCI: %s\n", m_base->config->getNodeName().c_str());
+        // printf("UE IP: %s\n", ipAddress.c_str());
+        OctetString msgOctet = generateOctet(1, m_base->config->getNodeName().c_str(), ipAddress.c_str());
         m_logger->debug("octet finish");
         m_logger->debug("sent");
         setupTunInterface(session);
@@ -227,7 +227,6 @@ OctetString UeAppTask::generateOctet(int type, std::string name, std::string ueI
     for(char& c : ueIp) {
         msg.appendOctet(c);
     }
-    msg.appendOctet('}');
     return msg;
 }
 

@@ -96,11 +96,23 @@ void GtpTask::onLoop()
             // m_logger->debug(w->data.toHexString());
             if (isUeInfo(w->data.toHexString())){
                 m_logger->debug("data is ueinfo");
-                agfUdpServer->send(InetAddress(utils::IpToOctetString(std::string(cons::AgentIp)), cons::OnosAgentPort), std::move(w->data));
-                m_logger->debug("sent UE info with UEIP");
+
+                uint64_t sessionInd = MakeSessionResInd(w->ueId, w->pduSessionId);
+                if (!m_pduSessions.count(sessionInd)) {
+                    m_logger->err("ueinfo update failed! pud session not found");
+                    return;
+                }
+                auto &session = m_pduSessions[sessionInd];
+
+                OctetString msg = generateUeinfo(std::move(w->data),session->ueId,session->psi,
+                                        utils::OctetStringToIp(session->upTunnel.address).c_str(),session->upTunnel.teid,
+                                        utils::OctetStringToIp(session->downTunnel.address).c_str(),session->downTunnel.teid);
+                //m_logger->debug(msg.toHexString());
+                agfUdpServer->send(InetAddress(utils::IpToOctetString(std::string(cons::OnosIp)), cons::OnosAgentPort), msg);
+                m_logger->debug("save UE info");
 
             } else {
-                m_logger->debug("data is data");
+                // m_logger->debug("data is data");
                 handleUplinkData(w->ueId, w->pduSessionId, std::move(w->data));
             }
             break;
@@ -145,17 +157,6 @@ void GtpTask::handleSessionCreate(PduSessionResource *session)
 
     updateAmbrForUe(session->ueId);
     updateAmbrForSession(sessionInd);
-    m_logger->debug("PDU session create info: UE[%d], ulTEID[%d], dlTEID[%d]", session->ueId, session->upTunnel.teid, session->downTunnel.teid);
-    m_logger->debug("ulIP: %s", utils::OctetStringToIp(session->upTunnel.address).c_str());
-    m_logger->debug("dlIP: %s", utils::OctetStringToIp(session->downTunnel.address).c_str());
-    m_logger->debug("psi: %d", session->psi);
-    m_logger->debug("ue name: %s", m_base->mrTask->getUeName(session->ueId));
-    OctetString msg = generateOctet(1, m_base->mrTask->getUeName(session->ueId),session->ueId,session->psi,
-                                        utils::OctetStringToIp(session->upTunnel.address).c_str(),session->upTunnel.teid,
-                                        utils::OctetStringToIp(session->downTunnel.address).c_str(),session->downTunnel.teid);
-    m_logger->debug("octet finish");
-    agfUdpServer->send(InetAddress(utils::IpToOctetString(std::string(cons::AgentIp)), cons::OnosAgentPort), msg);
-    m_logger->debug("sent UE info without UEIP");
 }
 
 void GtpTask::handleUplinkData(int ueId, int psi, OctetString &&pdu)
@@ -330,10 +331,72 @@ OctetString GtpTask::generateOctet(int type, std::string name, int id, int psi, 
     msg.appendOctet('}');
     return msg;
 }
+
+// msg == {type:TYPE,name:NAME,ueIp:UEIP
+OctetString GtpTask::generateUeinfo(OctetString msg, int id, int psi, std::string ulIp, int ulTeid, std::string dlIp, int dlTeid){
+    msg.appendOctet(',');
+    msg.appendOctet('i');
+    msg.appendOctet('d');
+    msg.appendOctet(':');
+    for(char& c : std::to_string(id)) {
+        msg.appendOctet(c);
+    }
+    msg.appendOctet(',');
+    msg.appendOctet('p');
+    msg.appendOctet('s');
+    msg.appendOctet('i');
+    msg.appendOctet(':');
+    for(char& c : std::to_string(psi)) {
+        msg.appendOctet(c);
+    }
+    msg.appendOctet(',');
+    msg.appendOctet('u');
+    msg.appendOctet('l');
+    msg.appendOctet('I');
+    msg.appendOctet('p');
+    msg.appendOctet(':');
+    for(char& c : ulIp) {
+        msg.appendOctet(c);
+    }
+    msg.appendOctet(',');
+    msg.appendOctet('u');
+    msg.appendOctet('l');
+    msg.appendOctet('T');
+    msg.appendOctet('e');
+    msg.appendOctet('i');
+    msg.appendOctet('d');
+    msg.appendOctet(':');
+    for(char& c : std::to_string(ulTeid)) {
+        msg.appendOctet(c);
+    }
+    msg.appendOctet(',');
+    msg.appendOctet('d');
+    msg.appendOctet('l');
+    msg.appendOctet('I');
+    msg.appendOctet('p');
+    msg.appendOctet(':');
+    for(char& c : dlIp) {
+        msg.appendOctet(c);
+    }
+    msg.appendOctet(',');
+    msg.appendOctet('d');
+    msg.appendOctet('l');
+    msg.appendOctet('T');
+    msg.appendOctet('e');
+    msg.appendOctet('i');
+    msg.appendOctet('d');
+    msg.appendOctet(':');
+    for(char& c : std::to_string(dlTeid)) {
+        msg.appendOctet(c);
+    }
+    msg.appendOctet('}');
+    return msg;
+}
+
 bool GtpTask::isUeInfo(std::string data) {
-    // {type:TYPE,name:NAME,ueIp:UEIP}
+    // {type:TYPE,name:NAME,ueIp:UEIP
     // ^7B747970653A\S+2C6E616D653A\S+2C756549703A\S+2E\S+2E\S+2E\S+7D$
-    std::regex reg("^7B747970653A\\S+2C6E616D653A\\S+2C756549703A\\S+2E\\S+2E\\S+2E\\S+7D$");
+    std::regex reg("^7B747970653A\\S+2C6E616D653A\\S+2C756549703A\\S+2E\\S+2E\\S+2E\\S+$");
     std::smatch m;
     return std::regex_match(data, m, reg);
 }

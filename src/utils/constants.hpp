@@ -22,15 +22,17 @@ struct cons
     static constexpr const char *Owner = "ALİ GÜNGÖR";
 
     // Some IP value
-    // gNB local WAN IP
+    // gNB internet WAN IP (for connection to ONOS)
+    // changed
     static constexpr const char *GnbIp = "192.168.30.2";
-    // UE local control IP (WAN)
-    static constexpr const char *UeModuleIp = "192.168.30.2";
-    static constexpr const char *AgentIp = "127.0.0.1";
+    // changed
+    static constexpr const char *OnosIp = "127.0.0.1";
 
     // Some port values
     // controller communication port
+    // changed
     static constexpr const uint16_t OnosAgentPort = 55555;
+    // changed
     static constexpr const uint16_t LocalAgentPort = 44444;
     static constexpr const uint16_t GtpPort = 2152;
     static constexpr const uint16_t PortalPort = 4997;
